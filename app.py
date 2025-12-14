@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/", methods=["GET", "POST"])
 def guess_game():
     result = ""
-    answer = ""   # MUST be empty string, not None
+    answer = ""   
 
     if request.method == "POST":
         try:
